@@ -208,15 +208,9 @@ Server listening on port 8080...
 [2026-10-22 15:04:25] Client disconnected
 ```
 
-(Your timestamps and client port number will differ.)
 
-## 6. Demonstration video
 
-The video shows the code being compiled, the server being started, the client sending messages, and the server's log.
-
-**Watch here:** [YOUTUBE_LINK_HERE](YOUTUBE_LINK_HERE)
-
-## 7. Limitations and possible improvements
+## 6. Limitations and possible improvements
 
 This is a learning example, not a production server, and it has some clear limits:
 
@@ -225,11 +219,11 @@ This is a learning example, not a production server, and it has some clear limit
 - **IPv4 only.** Supporting IPv6 means using `getaddrinfo()` and `AF_INET6` or address-family-independent code.
 - **No encryption.** Anything sent is readable by anyone watching the network. Real applications add TLS.
 
-## 8. Conclusion
+## 7. Conclusion
 
 This project shows the core of network programming in C: create a socket, give the server an address, listen, connect, exchange data with `send()` and `recv()`, and close cleanly. The same sequence of calls sits underneath much larger systems, even when a higher-level language hides it. The next steps would be handling multiple clients at once and designing a proper message format on top of the byte stream.
 
-## 9. References
+## 8. References
 
 1. Hall, B. (n.d.). *Beej's Guide to Network Programming*. https://beej.us/guide/bgnet/
 2. The Linux man-pages project. *socket(2)*. https://man7.org/linux/man-pages/man2/socket.2.html
